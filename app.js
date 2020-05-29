@@ -77,6 +77,8 @@ setInterval(function() {
 }, 5000);
 */
 
+//SHOWS DESCRIPTION ON HOVER
+
 }
 window.onload = function() {
   app();

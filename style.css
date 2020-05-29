@@ -618,6 +618,7 @@ footer {
 .columns {
   display: flex;
   justify-content: space-between;
+  z-index: 30;
 }
 .right-column {
   width: 49%;
@@ -652,4 +653,97 @@ footer {
   border: 1px solid lightgray;
   height: 15px;
   margin: auto 0px;
+}
+
+
+#ristretto {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 16%;
+  left: 8rem;
+  background-color: white;
+  display: none;
+}
+
+#ristretto h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#ristretto p {
+  text-align: left;
+}
+
+#macchiato {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 36%;
+  left: 8rem;
+  background-color: white;
+  display: none;
+}
+
+#macchiato h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#macchiato p {
+  text-align: left;
+}
+
+#doppio {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 56%;
+  left: 8rem;
+  background-color: white;
+  display: none;
+}
+
+#doppio h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#doppio p {
+  text-align: left;
+}
+
+#americano {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 70%;
+  left: 8rem;
+  background-color: white;
+  display: none;
+}
+
+#americano h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#americano p {
+  text-align: left;
 }
