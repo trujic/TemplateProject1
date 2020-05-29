@@ -33,8 +33,51 @@ let closeBtn = document.querySelector(".close").addEventListener("click", functi
     showContact();
   });
 
-}
 
+
+//MENJA POZADINU KLIKOM NA DESNO
+
+let imageCounter = 0;
+
+const changeImage = () => {
+  if (imageCounter === 0){
+    document.querySelector(".background").style.backgroundImage="url('./images/background-photo1.jpg')";
+  } else if (imageCounter === 1) {
+    document.querySelector(".background").style.backgroundImage="url('./images/background-photo2.jpg')";
+  } else {
+    document.querySelector(".background").style.backgroundImage="url('./images/background-photo3.jpg')";
+    imageCounter = -1;
+  }
+};
+
+let changeRight = document.querySelector("#next").addEventListener("click", function(){
+  imageCounter++;
+  changeImage();
+});
+
+// MENJA POZADINU KLIKOM NA LEVO
+
+let changeLeft = document.querySelector("#previous").addEventListener("click", function(){
+  if (imageCounter === -1) {
+    imageCounter = 1;
+    changeImage();
+  } else {
+  imageCounter--;
+  changeImage();
+}
+});
+
+//AUTOMATSKO MENJANJE POZADINE
+
+/*
+
+setInterval(function() {
+  changeImage();
+  imageCounter++;
+}, 5000);
+*/
+
+}
 window.onload = function() {
   app();
 }
