@@ -666,6 +666,7 @@ footer {
   left: 8rem;
   background-color: white;
   display: none;
+  animation: descriptionAnimationLeft 2s;
 }
 
 #ristretto h1 {
@@ -689,6 +690,7 @@ footer {
   left: 8rem;
   background-color: white;
   display: none;
+  animation: descriptionAnimationLeft 2s;
 }
 
 #macchiato h1 {
@@ -712,6 +714,7 @@ footer {
   left: 8rem;
   background-color: white;
   display: none;
+  animation: descriptionAnimationLeft 2s;
 }
 
 #doppio h1 {
@@ -735,6 +738,12 @@ footer {
   left: 8rem;
   background-color: white;
   display: none;
+  animation: descriptionAnimationLeft 2s;
+}
+
+@keyframes descriptionAnimationLeft {
+  from {left: -30%};
+  to {left: 8rem}
 }
 
 #americano h1 {
@@ -746,4 +755,112 @@ footer {
 
 #americano p {
   text-align: left;
+}
+
+#espresso {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 16%;
+  right: 8rem;
+  background-color: white;
+  display: none;
+  animation: descriptionAnimationRight 2s;
+  overflow-x: hidden;
+}
+
+#espresso h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#espresso p {
+  text-align: left;
+}
+
+#cappuccino {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 36%;
+  right: 8rem;
+  background-color: white;
+  display: none;
+  animation: descriptionAnimationRight 2s;
+  overflow-x: hidden;
+}
+
+#cappuccino h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#cappuccino p {
+  text-align: left;
+}
+
+#flatwhite {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 56%;
+  right: 8rem;
+  background-color: white;
+  display: none;
+  animation: descriptionAnimationRight 2s;
+  overflow-x: hidden;
+}
+
+#flatwhite h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#flatwhite p {
+  text-align: left;
+}
+
+#latte {
+  width: 35%;
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 72%;
+  right: 8rem;
+  background-color: white;
+  display: none;
+  animation: descriptionAnimationRight 2s;
+}
+
+#latte h1 {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#latte p {
+  text-align: left;
+}
+
+@keyframes descriptionAnimationRight {
+  from {right: -30%};
+  to {right: 8rem}
+}
+
+body {
+  overflow-x: hidden;
 }
